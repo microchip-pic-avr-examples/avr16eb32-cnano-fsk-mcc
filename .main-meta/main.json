@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.avr16eb32-cnano-fsk-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Timer/Counter Type F (TCF) – Frequency-shift Keying (FSK) Modulation and Demodulation with TCF and TCB Using the AVR16EB32 Microcontroller with MCC Melody",
         "projectName": "avr16eb32-cnano-fsk-mcc",
         "shortDescription": "This project showcases a full duplex communication between two AVR16EB32 Curiosity Nano boards through FSK data modulation and demodulation techniques implemented using timer peripherals.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Ex_DFP",
+            "semverRange": "^2.8.189"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.6.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,9 @@
                 "versionRange": "*"
             }
         },
-        "author": "Prasad Aradhya",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Mihai Alexandru Ricanu",
+        "peripherals": ["TCF","TCB","TCE","EVSYS","USART"],
+        "keywords": ["Frequency Measurement","Input Capture","Numerically Controlled Oscillator","Event System","Timer/Counter type F","Timer/Counter type E","Serial Communication","MCC Melody","Curiosity Nano"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
