@@ -2,7 +2,7 @@
  
 # Timer/Counter Type F (TCF) – Frequency-shift Keying (FSK) Modulation and Demodulation with TCF and TCB Using the AVR16EB32 Microcontroller with MCC Melody
 
-This project showcases a full duplex communication between two AVR16EB32 Curiosity Nano boards through FSK data modulation and demodulation techniques implemented using timer peripherals. A simplified block diagram of the application is featured below, illustrating the peripherals used for each process.
+This project showcases a full duplex communication between two AVR16EB32 Curiosity Nano (CNANO) boards through FSK data modulation and demodulation techniques implemented using timer peripherals. A simplified block diagram of the application is featured below, illustrating the peripherals used for each process.
 
 <br><img src="images/fsk_block_diagram.jpg" width="600">
 
@@ -10,7 +10,7 @@ Binary FSK (BFSK) is a digital modulation technique that involves shifting the c
 
 <br><img src="images/fsk_working_principle.jpg" width="600">
 
-Data input is provided by the user from the serial terminal using the Universal Synchronous and Asynchronous Receiver and Transmitter (USART) peripheral. The Timer/Counter type F (TCF) is configured in NCO Fixed Duty-Cycle mode and is used to generate the two FSK frequencies. The Timer/Counter type E (TCE) is configured in Normal mode and generates periodic interrupts used to modulate the data. By altering the increment value of the TCF, the frequency of the output waveform is shifted between the two values according to the state of the bit that is modulated.
+Data input is provided by the user from the serial terminal using the Universal Synchronous and Asynchronous Receiver and Transmitter (USART) peripheral. The TCF is configured in NCO Fixed Duty-Cycle mode and is used to generate the two FSK frequencies. The Timer/Counter type E (TCE) is configured in Normal mode and generates periodic interrupts used to modulate the data. By altering the TCF's increment value, the frequency of the output waveform is shifted between the two values according to the state of the bit that is modulated.
 
 <br><img src="images/FSK_mod_diagram.jpg" width="600">
 
@@ -39,7 +39,7 @@ The demodulation process is implemented using two instances of the TCB periphera
 
 ## Operation
 
-To program the Curiosity Nano boards with this MPLAB X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br><br>
+To program the CNANO boards with this MPLAB X project, follow the steps provided in the [How to Program the Curiosity Nano Board](#how-to-program-the-curiosity-nano-board) chapter.<br><br>
 
 ## Setup
 
@@ -151,12 +151,12 @@ The following configurations must be made for this project:
 | PA5 | Digital output |    Demodulated binary data   |
 | PA6 | Digital output |Toggle on TCE0 interrupt event|
 
-**Note:** Only PC1, PC2, PA0 and PA1 are actually needed for the application. The rest of the pins are used to observe the modulation and demodulation processes.
+**Note:** Only PC1, PC2, PA0 and PA1 are needed for the application. The rest of the pins are used to observe the modulation and demodulation processes.
 
   <br><img src="images/pin_grid_view.PNG" width="600">
   <br><img src="images/pins.PNG" width="600">
 
-The Xplained Pro Extension header on the Curiosity Nano Base is used to connect the two AVR16EB32 Curiosity Nano boards.
+The Xplained Pro Extension header on the Curiosity Nano Base is used to connect the two AVR16EB32 CNANO boards.
 <br><img src="images/xplained_pro_extension.PNG" width="300">
 
 ## Demo
@@ -178,7 +178,7 @@ Logic analyzer captures:
 Serial terminal windows:
 <br><img src="images/serial_terminals.png" width="600">
 
-The two Curiosity Nano boards are connected to the same laptop/PC in this case. The low-side window displays the text that was typed in the top-side window and vice-versa.
+The two CNANO boards are connected to the same laptop/PC in this case. The low-side window displays the text that was typed in the top-side window and vice-versa.
 
 ## Summary
 
