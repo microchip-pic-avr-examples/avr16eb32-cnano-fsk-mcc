@@ -178,7 +178,7 @@ Logic analyzer captures:
 Serial terminal windows:
 <br><img src="images/serial_terminals.png" width="600">
 
-The two CNANO boards are connected to the same laptop/PC in this case. The low-side window displays the text that was typed in the top-side window and vice-versa.
+The two CNANO boards are connected to the same laptop/PC in this case. The low-side window displays the text typed in the top-side window and vice-versa.
 
 ## Summary
 
